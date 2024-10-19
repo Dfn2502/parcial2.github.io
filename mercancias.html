@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Cafetería Pop Art</title>
+  <link rel="stylesheet" href="css/style_merch.css">
+  <link rel="stylesheet" href="css/nav_style.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <script src="java/script_nav_menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="">
+        <div class="content_carro">
+        <img class="carro" src="img/carro_compras.svg" alt="">
+        <button class="hamburguesa" onclick="toggleMenu()"><i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        </div>
+    </header>
+    <nav id="menu">
+        <ul class="nav-list">
+            <li><a href="index.html">Inicio </a></li>
+            <li><a href="menu.html">Menu</a>
+                <ul class="menu_desplegable">
+                    <li><a href="#frio">Cafe Frio</a></li>
+                    <li><a href="#caliente">Cafe Caliente</a></li>
+                    <li><a href="#te">Te</a></li>
+                </ul>
+            </li>
+            <li><a href="mercancias.html">Mercancias</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="merch-section" class="container">
+        <fieldset id="playera1">
+    <legend>Playeras</legend>
+    <div class="gallery-container">
+        <input type="radio" name="gallery-playeras" id="image1" checked>
+        <input type="radio" name="gallery-playeras" id="image2">
+        <input type="radio" name="gallery-playeras" id="image3">
+        <div class="gallery-images">
+            <img src="img/products/negrabrew01.png" alt="Playera 1">
+            <img src="img/products/brewblanca01.png" alt="Playera 2">
+            <img src="img/products/brewblanca02.png" alt="Playera 3">
+        </div>
+    </div>
+    <div class="gallery-controls">
+        <label for="image1">1</label>
+        <label for="image2">2</label>
+        <label for="image3">3</label>
+    </div>
+    <p class="description">Playeras, disponibles en varios colores y diseños.</p>
+</fieldset>
+
+<fieldset id="vasos1">
+    <legend>Vasos</legend>
+    <div class="gallery-container">
+        <input type="radio" name="gallery-vasos" id="vaso1" checked>
+        <input type="radio" name="gallery-vasos" id="vaso2">
+        <input type="radio" name="gallery-vasos" id="vaso3">
+        <div class="gallery-images">
+            <img src="img/products/vasonegro01.png" alt="Vasos 1">
+            <img src="img/products/vasonegro02.png" alt="Vasos 2">
+            <img src="img/products/vasorosa01.png" alt="Vasos 3">
+        </div>
+    </div>
+    <div class="gallery-controls">
+        <label for="vaso1">1</label>
+        <label for="vaso2">2</label>
+        <label for="vaso3">3</label>
+    </div>
+    <p class="description">Vasos únicos con diseños vibrantes que destacan tu estilo.</p>
+</fieldset>
+
+<fieldset id="termos1">
+    <legend>Termos</legend>
+    <div class="gallery-container">
+        <input type="radio" name="gallery-termos" id="termo1" checked>
+        <input type="radio" name="gallery-termos" id="termo2">
+        <input type="radio" name="gallery-termos" id="termo3">
+        <div class="gallery-images">
+            <img src="img/products/Termo01.png" alt="Termo 1">
+            <img src="img/products/Termo02.png" alt="Termo 2">
+            <img src="img/products/Termo03.png" alt="Termo 3">
+        </div>
+    </div>
+    <div class="gallery-controls">
+        <label for="termo1">1</label>
+        <label for="termo2">2</label>
+        <label for="termo3">3</label>
+    </div>
+    <p class="description">Termos duraderos para llevar tu bebida con estilo.</p>
+</fieldset>
+
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+<footer>
+    <div class="acerca">
+        <section class="text-2">
+            <p>coffe-acerca@gmail.com</p>
+            <p>656-2364-4416</p>
+        </section>
+        <section class="redes">
+            <img src="img/redes/x.png">
+            <img src="img/redes/face.png" alt="">
+            <img src="img/redes/ins.png" alt="">
+        </section>
+       
+    </div>
+    <div class="log-neg">
+       <a href=""><img src="img/redes/coffe-brew.png" alt=""></a>
+    </div>
+
+    <section class="bg-tram">
+        <img src="img/half-1.png" alt="">
+    </section>
+</footer>
+</body>
+</html>
+
+
+

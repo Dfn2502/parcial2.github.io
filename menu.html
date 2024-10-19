@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/style_menu.css">
+    <link rel="stylesheet" href="css/nav_style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="java/script_nav_menu.js" defer></script>
+    <script src="java/script_carro_compras.js" defer></script>
+
+    <!--Fuente Patyone One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <header>
+            <img class="logo" src="img/logo.png" alt="">
+            <div class="content_carro">
+            <img class="carro" src="img/carro_compras.svg" alt="">
+            <div id="contador" class="contador">0</div>
+            <button class="hamburguesa" onclick="toggleMenu()"><i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            </div>
+        </header>
+        <nav id="menu">
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="menu.html">Menu</a>
+                    <ul class="menu_desplegable">
+                        <li><a href="#frio">Cafe Frio</a></li>
+                        <li><a href="#caliente">Cafe Caliente</a></li>
+                        <li><a href="#te">Te</a></li>
+                    </ul>
+                </li>
+                <li><a href="mercancias.html">Mercancias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="principal">
+            <h2 class="titulo1" id="frio">Cafe Frio</h2>
+            <hr class="regla1">
+
+            <section class="seccion">
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img src="img/frappe.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Frappe</h2> <br>
+                    <section class="precio_boton">
+                    <h3>60$</h3>
+                    <button onclick="myfunction()" class ="anadir_carrito">$</button>
+                    </section>
+
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="iced_latte" src="img/iced_latte.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Latte</h2> <br>
+                    <section class="precio_boton">
+                    <h3>85$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class src="img/iced_mocha.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Mocha</h2> <br>
+                    <section class="precio_boton">
+                    <h3>70$</h3>
+                    <button onclick="myfunction()"  class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion">
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="iced_latte" src="img/iced_americano.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Americano</h2> <br>
+                    <section class="precio_boton">
+                    <h3>65$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="iced_latte" src="img/brew.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Brew</h2> <br>
+                    <section class="precio_boton">
+                    <h3>90$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="iced_latte" src="img/affogato.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Affogato</h2> <br>
+                    <section class="precio_boton">
+                    <h3>100$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+            </section>
+
+            
+            <h2 class="titulo2" id="caliente">Cafe Caliente</h2>
+            <hr class="regla1">
+
+            <section class="seccion">
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="espresso" src="img/espresso.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Espresso</h2> <br>
+                    <section class="precio_boton">
+                    <h3>70$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="espresso" src="img/latte.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Latte</h2> <br>
+                    <section class="precio_boton">
+                    <h3>85$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="espresso" src="img/capuccino.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Capuccino</h2> <br>
+                    <section class="precio_boton">
+                    <h3>88$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion">
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="iced_latte" src="img/machiatto.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Machiatto</h2> <br>
+                    <section class="precio_boton">
+                    <h3>100$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="olla" src="img/olla.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>De Olla</h2> <br>
+                    <section class="precio_boton">
+                    <h3>60$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="olla" src="img/americano.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Americano</h2> <br>
+                    <section class="precio_boton">
+                    <h3>60$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="titulo1" id="te">Te</h2>
+            <hr class="regla1">
+
+            <section class="seccion">
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="espresso" src="img/oolong.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Oolong</h2> <br>
+                    <section class="precio_boton">
+                    <h3>60$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="espresso" src="img/te_verde.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Verde</h2> <br>
+                    <section class="precio_boton">
+                    <h3>40$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+                <div class="cafe">
+                    <div class="circulo">
+                        <figure>
+                        <img class="espresso" src="img/te_rojo.png" alt="">
+                        </figure>
+                    </div>
+                    <h2>Rojo</h2> <br>
+                    <section class="precio_boton">
+                    <h3>50$</h3>
+                    <button onclick="myfunction()" class="anadir_carrito">$</button>
+                    </section>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <footer>
+            <div class="acerca">
+                <section class="text-2">
+                    <p>coffe-acerca@gmail.com</p>
+                    <p>656-2364-4416</p>
+                </section>
+                <section class="redes">
+                    <img src="img/redes/x.png">
+                    <img src="img/redes/face.png" alt="">
+                    <img src="img/redes/ins.png" alt="">
+                </section>
+               
+            </div>
+            <div class="log-neg">
+               <a href=""><img src="img/redes/coffe-brew.png" alt=""></a>
+            </div>
+     
+            <section class="bg-tram">
+                <img src="img/half-1.png" alt="">
+            </section>
+        </footer>
+    </main>
+
+</body>
+</html>

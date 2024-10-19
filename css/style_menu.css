@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+}
+body{
+    
+    background-color: #2E78BD;
+    background-image: url(../img/patron_1.png);
+    background-blend-mode: soft-light;
+}
+.principal{
+    width: 100%;
+    background-color: #2E78BD;
+    background-image: url(../img/patron_1.png);
+    background-blend-mode: soft-light;
+    
+}
+.titulo1{
+    color: white;
+    font-family: "Paytone One", sans-serif;
+    font-size: 350%;
+    margin-top: 5%;
+    margin-left: 8%;
+    scroll-margin-top: 150px;
+    text-shadow: 5px 5px black;
+    display: inline-block;
+}
+.regla1{
+    width: 90%;
+    height: 4px;
+    margin-left: 4%;
+    background-color: white;
+}
+.seccion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cafe{
+    width: 26%;
+    height: 120%;
+    background-color: #E5408F;
+    margin-top: 3%;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px #8c134d;
+}
+.cafe h2{
+    color: white;
+    font-family: "Paytone One", sans-serif;
+    font-size: 350%;
+    text-align: center;
+    text-shadow: 4px 4px black;
+    margin-top: 5%;
+}
+.precio_boton{
+    color: white;
+    font-family: "Paytone One", sans-serif;
+    font-size: 340%;
+    align-content: center;
+    display: flex;
+    width: 100%;
+    height: 12%;
+}
+.precio_boton h3{
+    margin-left: 22%;
+    
+    text-shadow: 4px 4px black;
+    font-size: 90%;
+}
+.anadir_carrito{
+    margin-left: 10%;
+    border-radius: 100%;
+    width: 20%; 
+    height: 100%;
+    border: none;
+    color: black;
+    font-family: "Paytone One", sans-serif;
+    font-size: 100%;
+    transition: 0.3s;
+
+}
+.anadir_carrito:hover{
+    background-color: black;
+    color: white;
+}
+.circulo{
+    width: 85%;
+    height: 55%;
+    margin-top: 22%;
+    margin-left: 8%;
+    border-radius: 100%;
+    box-shadow: 10px 5px 5px black;
+    background-color: rgb(252, 252, 143);
+}
+.circulo figure{
+    width: 100%;
+    margin-top: -20%;
+    text-align: center;
+}
+.circulo figure img:not(.iced_latte,.espresso,.olla){
+    width: 70%;
+    margin-top: -14%;
+}
+.iced_latte{
+    margin-top: 2%;
+    width: 68%;
+}
+.titulo2 {
+    color: white;
+    font-family: "Paytone One", sans-serif;
+    text-shadow: 5px 5px black;
+    font-size: 350%;
+    margin-top: 4%;
+    margin-left: 70%;
+    scroll-margin-top: 150px;
+    margin-top: 10%;
+}
+.espresso{
+    width: 120%;
+    margin-top: 20%;
+    margin-left: -11%;
+}
+.olla{
+    width: 120%;
+    margin-top: 25%;
+    margin-left: -11%;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    
+    .cafe h2{
+        font-size: 251%;
+    }
+    .precio_boton h3{
+        margin-left: 13%;
+        font-size: 75%;
+    }
+    .anadir_carrito{
+        margin-left: 10%;
+        width: 32%;
+    }
+    .titulo2{
+        margin-left: 58%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    
+    .titulo1{
+        font-size: 314%;
+    }
+    .cafe h2{
+        font-size: 184%;
+    }
+    .anadir_carrito{
+        font-size: 83%;
+    }
+    .titulo2{
+        margin-left: 48%;
+        font-size: 314%;
+    }
+}
+@media screen and (max-width: 480px) {
+    
+
+    .titulo1 {
+        font-size: 274%;
+    }
+    .titulo2 {
+        margin-left: 29%;
+        font-size: 274%;
+    }
+
+    .cafe h2 {
+        font-size: 137%;
+    }
+    .precio_boton h3 {
+        font-size: 49%;
+    }
+    .anadir_carrito {
+        font-size: 53%;
+    }
+}

@@ -1,0 +1,69 @@
+footer{
+    background-color: #242829;
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+    overflow: hidden;
+    z-index: 4;
+    position: relative;
+    margin-top: 10%;
+}
+    footer div{
+        margin-left: 5%;
+        display: inline-block;
+    }
+    footer div:nth-child(2){
+        margin-left: 13%;
+    }
+
+    .acerca{
+        margin-top: 3%;
+        z-index: 2;
+        position: relative;
+        width: 45%;
+
+    }
+        .acerca p{
+            margin-bottom: 15px;
+            font-family: "Paytone One", sans-serif;
+            color: white;
+            font-size: 100%;
+        }
+
+    .redes{
+        margin-top: 1%;
+        z-index: 2;
+        position: relative;
+    }
+        .redes img{
+            margin-left: 10%;
+            width: 16%;
+        }
+    .log-neg{
+        width: 20%;
+        z-index: 2;
+        position: relative;
+    }
+    .log-neg img{
+        width: 100%;
+    }
+    .bg-tram{
+        position: relative;
+        z-index: 1;
+        top: -990px;
+        filter: invert(100%) opacity(5%);
+        transform: rotate(232deg);
+    }
+
+    @media screen and (max-width:768px) {
+        .acerca p{
+            font-size: 69%;
+        }
+        .redes{
+            margin-top: 11%;
+        }
+        footer{
+            height: 224px;
+        }
+        
+    }
